@@ -12,35 +12,17 @@
   color: #ddd;
 }
 
-#navbar-try-btn:hover {
-  color: #ffffff;
+h1, h2, h3, h4 {
+  color: #4A4355;
 }
 
-html, body, .container, .content {
-    height: 100%;
+.main-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
- 
-.container, .content {
-    position: relative;
-}
- 
-.proper-content {
-    padding-top: 50px; /* >= navbar height */
-}
- 
-.wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -50px; /* same as the footer */
-}
- 
-.push {
-    height: 50px; /* same as the footer */
-}
-.footer-wrapper {
-    position: relative;
-    height: 50px;
+
+#navbar-try-btn:hover {
+  color: #ffffff;
 }
 
 .no-padding {

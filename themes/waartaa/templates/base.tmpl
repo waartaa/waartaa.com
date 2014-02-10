@@ -59,19 +59,16 @@ lang="${lang}">
 <!-- Navbar end -->
 
 <%block name="all_content">
-  <div class="container">
-      <div class="body-content">
-          <!--Body content-->
-          <div class="row col-md-10 col-md-offset-1">
-              <%block name="content"></%block>
-          </div>
-          <!--End of body content-->
-
-          <footer class="bs-footer" role="contentinfo">
-              ${content_footer}
-          </footer>
-      </div>
+  <div class="container main-content">
+    <div class="row">
+      <!--Body content-->
+        <%block name="content"></%block>
+      <!--End of body content-->
+    </div>
   </div>
+  <footer class="bs-footer" role="contentinfo">
+      ${content_footer}
+  </footer>
 </%block>
 
 ${bootstrap.late_load_js()}
