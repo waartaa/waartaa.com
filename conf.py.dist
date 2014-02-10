@@ -647,7 +647,7 @@ GLOBAL_CONTEXT = {
     'blog_desc': BLOG_DESCRIPTION,
     'translations': TRANSLATIONS,
     'license': LICENSE,
-    'search_form': SEARCH_FORM,
+    #'search_form': SEARCH_FORM,
     #'disqus_forum': DISQUS_FORUM,
     'content_footer': CONTENT_FOOTER,
     'rss_path': RSS_PATH,
