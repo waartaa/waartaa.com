@@ -3,7 +3,7 @@
 output/*
 cache/*
 *.DS_Store
-.doit.db.db
+.doit.db
 *_bak*
 conf.py
 
