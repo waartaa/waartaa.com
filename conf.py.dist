@@ -653,5 +653,6 @@ GLOBAL_CONTEXT = {
     'rss_path': RSS_PATH,
     #'rss_link': RSS_LINK,
     'date_format': DATE_FORMAT,
-    'site_url_without_slash': SITE_URL_WITHOUT_SLASH
+    'site_url_without_slash': SITE_URL_WITHOUT_SLASH,
+    'site_protocol': SITE_PROTOCOL
 }
