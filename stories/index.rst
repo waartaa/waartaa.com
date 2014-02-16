@@ -43,7 +43,7 @@
               <iframe src="https://www.waartaa.com/github-btn.html?user=waartaa&repo=waartaa&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
             </li>
             <li>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.waartaa.com/" data-lang="en" data-text="Waartaa - an open source IRC client as a service">Tweet</a>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.waartaa.com/" data-lang="en" data-text="Waartaa - an open source IRC client as a service">Tweet</a>
             <li>
               <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/follow_button.1390956745.html#_=1391800265777&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=waartaa&amp;show_count=true&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 236px; height: 20px;"></iframe>
             </li>
