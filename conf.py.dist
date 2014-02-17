@@ -70,7 +70,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/features.html', 'Features'),
         ('/blog/', 'Blog'),
-        ('http://waartaa.readthedocs.com/', 'Docs')
+        ('http://waartaa.readthedocs.org/', 'Docs')
     ),
 }
 
