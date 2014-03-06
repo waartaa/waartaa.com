@@ -10,7 +10,7 @@
     :align: center
 
 We are elated to inform you that `Waartaa <https://www.waartaa.com>`_
-has been accepted as `project idea <https://fedoraproject.org/wiki/Summer_coding_ideas_for_2014#Waartaa>`_
+has been accepted as a `project idea <https://fedoraproject.org/wiki/Summer_coding_ideas_for_2014#Waartaa>`_
 for `GSOC <https://www.google-melange.com/gsoc/homepage/google/gsoc2014>`_
 under `Fedora <https://fedoraproject.org/>`_'s umbrella.
 
