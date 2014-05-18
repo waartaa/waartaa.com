@@ -6,4 +6,4 @@ cache/*
 .doit.db
 *_bak*
 conf.py
-
+*~
