@@ -11,13 +11,13 @@ Overview
 
 Waartaa is a realtime web IRC client as a service. Waartaa is powered by:
 
-- Meteor JS
-- MongoDB
-- node-irc, amongst other cool NPM packages
-- a bunch of meteorite packages from
+- **Meteor** JS
+- **MongoDB**
+- **node-irc**, amongst other cool NPM packages
+- a bunch of **meteorite** packages from
   `atmospherejs.com <http://atmospherejs.com>`_
 
-We'd released version 0.1-rc1 a few months back with some basic feature
+We'd released version **0.1-rc1** a few months back with some basic feature
 set.
 
 - Send server, channel, personal messages
@@ -41,7 +41,8 @@ Issues
   was the one published in realtime and with heavy writes. Meteor would use
   to poll the collection to find and push updates on the existing
   publications. The increased reads led to increased CPU usage and network
-  IO for the MongoDB service. CPU usage would spike to 400%.
+  IO for the MongoDB service. CPU usage would spike to 400%. Also, handling
+  too many user tasks in the application server led to CPU spikes.
 
 - **Slow app performance**
 
@@ -84,7 +85,7 @@ Optimizations & solutions
 - **Async read/writes to DB**
 
   Meteor comes with an option to do DB read/writes in an asynchronous way.
-  Switching to asyn DB read and write wherever possible made waartaa more
+  Switching to async DB read and write wherever possible made waartaa more
   responsive by leaving room for the app to handle new requests while
   the app is waiting for DB IO.
 
@@ -111,9 +112,31 @@ Optimizations & solutions
   of the working set of data needed for realtime publication and hence,
   it reduces the memory usage of the MongoDB service.
 
+- **Task queues**
+
+  Some operations like joining servers and channels during app restart
+  were very costly operations and would lead to high CPU usage for some
+  time. Hence, the application would become slow during server restart.
+  Similarly, there were instances when there'd be high number of requests
+  for updating data for channel nicks, nicks leaving/joining channels, etc.
+  This would lead to CPU spikes. Implementing in memory task queues helped
+  to rate limit such operations and keep the CPU load in check. In the
+  longer run, we need to consider better task queuing solutions.
+
 - **Easy sandbox setup with Vagrant**
 - **Automated deployment with Ansible**
 
+Below is a snapshot showing the CPU, network load on the app server of
+`https://try.waartaa.com <https://try.waartaa.com>`_ during the initial days
+of testing our optimizations.
+
+.. image:: /galleries/waartaa/waartaa_app_optimize_cpu_usage.png
+    :align: center
+    :width: 80%
+
+.. raw:: html
+
+    <br/><br/>
 
 The above steps have enabled us to keep our demo instance running at
 `https://try.waartaa.com <https://try.waartaa.com>`_ using limited resources.
