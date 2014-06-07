@@ -36,7 +36,7 @@ proposed were:
 student of Metallurgical Department of IIT Roorkee, India got selected as the
 GSoC 2014 candidate for Waartaa.
 
-.. image:: ../galleries/waartaa/lalit_gsoc_selection_tweet.png
+.. image:: /galleries/waartaa/lalit_gsoc_selection_tweet.png
     :width: 90%
     :align: center
 
