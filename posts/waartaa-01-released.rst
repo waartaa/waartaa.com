@@ -1,7 +1,7 @@
 .. title: Waartaa 0.1 released!
 .. slug: waartaa-01-released
 .. date: 2014/07/02 01:27:36
-.. tags: 
+.. tags: release,0.1,irc,waartaa
 .. link: 
 .. description: 
 .. type: text
