@@ -13,46 +13,37 @@
     <div>
       <!-- Banner -->
       <div class="waartaa-banner-main-content row">
-        <div class="col-md-5">
           <h1 class="waartaa-banner">
-            Waartaa &nbsp;<small class="waartaaversion">0.1</small>
+            waartaa &nbsp;<strong class="waartaaversion">0.2</strong> is here!
           </h1>
-          <h1 class="waartaa-subbanner">
-            <span class="waartaa-mission-logo-irc">IRC</span> + 
-            <icon class="waartaa-mission-logo-cloud glyphicon glyphicon-cloud"></icon> =
-            <icon class="waartaa-mission-logo-love glyphicon glyphicon-heart"></icon>
-          </h1>
-          <p style="text-align: center;">
-            An open source communication tool built with love.
-          </p>
-        </div>
-        <div class="waartaa-banner-img-container col-md-7">
-          <img class="waartaa-banner-img img-rounded" src="/assets/images/waartaa.png">
-        </div>
+      </div>
+      <div class="row">
+        <img class="waartaa-banner-img img-rounded" src="/assets/images/waartaa_com_splash.svg">
       </div>
       <!-- Bannder end -->
 
       <!-- Social buttons -->
       <div id="social-btns">
         <div class="container">
-          <ul class="list-inline">
-            <li>
-              <iframe src="https://www.waartaa.com/github-btn.html?user=waartaa&repo=waartaa&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-            </li>
-            <li>
-              <iframe src="https://www.waartaa.com/github-btn.html?user=waartaa&repo=waartaa&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-            </li>
-            <li>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.waartaa.com/" data-lang="en" data-text="Waartaa - an open source IRC client as a service">Tweet</a>
-            <li>
-              <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/follow_button.1390956745.html#_=1391800265777&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=waartaa&amp;show_count=true&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 236px; height: 20px;"></iframe>
-            </li>
-            <li>
+            <ul class="list-inline">
+              <li>
+                <iframe src="https://www.waartaa.com/github-btn.html?user=waartaa&repo=waartaa&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+              </li>
+              <li>
+                <iframe src="https://www.waartaa.com/github-btn.html?user=waartaa&repo=waartaa&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+              </li>
+              <li>
                 <script data-gittip-username="rtnpro"
                         data-gittip-widget="button"
                                 src="//gttp.co/v1.js"></script>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.waartaa.com/" data-lang="en" data-text="Waartaa - an open source IRC client as a service">Tweet</a>
+              </li>
+              <li>
+                <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/follow_button.1390956745.html#_=1391800265777&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=waartaa&amp;show_count=true&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 236px; height: 20px;"></iframe>
+              </li>
+            </ul>
         </div>
       </div>
       <!-- Social buttons end -->
