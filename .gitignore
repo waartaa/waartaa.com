@@ -5,5 +5,5 @@ cache/*
 *.DS_Store
 .doit.db
 *_bak*
-conf.py
+conf_local.py
 *~

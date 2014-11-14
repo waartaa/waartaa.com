@@ -8,8 +8,9 @@ import time
 SITE_PROTOCOL = 'https'
 
 # Data about this site
+# (translatable)
 BLOG_AUTHOR = "Ratnadeep Debnath"
-BLOG_TITLE = "www.waartaa.com"
+BLOG_TITLE = "Waartaa"
 # This is the main URL for your site. It will be used
 # in a prominent link
 SITE_URL = "{site_protocol}://www.waartaa.com/".format(
@@ -68,7 +69,7 @@ TRANSLATIONS = {
 # You should provide a key-value pair for each used language.
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/features.html', 'Features'),
+        ('/features/', 'Features'),
         ('/blog/', 'Blog'),
         ('/roadmap/', 'Roadmap'),
         ('http://waartaa.readthedocs.org/', 'Docs')
@@ -211,10 +212,7 @@ REDIRECTIONS = []
 # "rsync -rav output/* joe@my.site:/srv/www/site"
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
-#DEPLOY_COMMANDS = [
-#    "rsync -rav output/* joe@my.site:/srv/www/site"
-#    'rdiff-backup output ~/blog-backup'
-#]
+DEPLOY_COMMANDS = []
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -328,14 +326,17 @@ DATE_FORMAT = '%b %d, %Y'
 # A HTML fragment describing the license, for the sidebar.
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
+# (translatable)
 LICENSE = """
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
 <img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
 src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 
+
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
+# (translatable)
 CONTENT_FOOTER = """
 <div class="container">
     <p>Designed and built with love and gratitude by <a href="http://twitter.com/rtnpro" target="_blank">@rtnpro</a>.</p>
@@ -343,15 +344,27 @@ CONTENT_FOOTER = """
     <p>Code licensed under <a href="https://github.com/waartaa/waartaa/blob/master/LICENSE" target="_blank">MIT</a>.</p>
     <ul class="footer-links muted">
       <li>Currently v0.1</li>
-      <li>·</li>
+      <li>.</li>
       <li><a href="https://github.com/waartaa/waartaa">GitHub</a></li>
-      <li>·</li>
+      <li>.</li>
       <!--<li><a href="http://blog.waartaa.com">Blog</a></li>
-      <li>·</li>-->
+      <li>.</li>-->
       <li><a href="https://github.com/waartaa/waartaa/issues?state=open">Issues</a></li>
     </ul>
 </div>"""
 
+# (translatable)
+CONTENT_FOOTER_FORMATS = {
+    DEFAULT_LANG: (
+        (),
+        {
+            "email": BLOG_EMAIL,
+            "author": BLOG_AUTHOR,
+            "date": time.gmtime().tm_year,
+            "license": LICENSE
+        }
+    )
+}
 # To use comments, you can choose between different third party comment
 # systems, one of "disqus", "livefyre", "intensedebate", "moot",
 #                 "googleplus" or "facebook"
@@ -360,7 +373,7 @@ CONTENT_FOOTER = """
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = "waartaa"
+# COMMENT_SYSTEM_ID = ""
 
 # Enable annotations using annotateit.org?
 # If set to False, you can still enable them for individual posts and pages
@@ -387,7 +400,7 @@ COMMENT_SYSTEM_ID = "waartaa"
 # it will instead /foo/default.html => /foo)
 # (Note: This was briefly STRIP_INDEX_HTML in v 5.4.3 and 5.4.4)
 # Default = False
-STRIP_INDEXES = False
+STRIP_INDEXES = True
 
 # Should the sitemap list directories which only include other directories
 # and no files.
@@ -402,11 +415,11 @@ STRIP_INDEXES = False
 # This can be disabled on a per-page/post basis by adding
 #    .. pretty_url: False
 # to the metadata
-# PRETTY_URLS = False
+PRETTY_URLS = True
 
 # If True, publish future dated posts right away instead of scheduling them.
 # Defaults to False.
-# FUTURE_IS_NOW = False
+FUTURE_IS_NOW = True
 
 # If True, future dated posts are allowed in deployed output
 # Only the individual posts are published/deployed; not in indexes/sitemap
@@ -506,6 +519,7 @@ SOCIAL_BUTTONS_CODE = """
 #</form>
 #<!-- End of custom search -->
 #""" % SITE_URL
+SEARCH_FORM = ""
 
 # Also, there is a local search plugin you can use, based on Tipue, but it requires setting several
 # options:
@@ -638,22 +652,27 @@ LOGGING_HANDLERS = {
     #}
 }
 
+try:
+    from conf_local import *
+except:
+    pass
+
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {
     #'analytics': ANALYTICS,
-    'blog_author': BLOG_AUTHOR,
-    'blog_title': BLOG_TITLE,
+    #'blog_author': BLOG_AUTHOR,
+    #'blog_title': BLOG_TITLE,
     'site_url': SITE_URL,
-    'blog_desc': BLOG_DESCRIPTION,
+    #'blog_desc': BLOG_DESCRIPTION,
     'translations': TRANSLATIONS,
-    'license': LICENSE,
+    #'license': LICENSE,
     #'search_form': SEARCH_FORM,
     #'disqus_forum': DISQUS_FORUM,
-    'content_footer': CONTENT_FOOTER,
+    #'content_footer': CONTENT_FOOTER,
     'rss_path': RSS_PATH,
     #'rss_link': RSS_LINK,
     'date_format': DATE_FORMAT,
-    'site_url_without_slash': SITE_URL_WITHOUT_SLASH,
+    'site_url_without_slash': SITE_URL[:-1],
     'site_protocol': SITE_PROTOCOL
 }
