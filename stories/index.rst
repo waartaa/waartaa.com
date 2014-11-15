@@ -38,7 +38,7 @@
                                 src="//gttp.co/v1.js"></script>
               </li>
               <li>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.waartaa.com/" data-lang="en" data-text="Waartaa - an open source IRC client as a service">Tweet</a>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.waartaa.com/" data-lang="en" data-text="Waartaa - an open source communication and collaboration tool">Tweet</a>
               </li>
               <li>
                 <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/follow_button.1390956745.html#_=1391800265777&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=waartaa&amp;show_count=true&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 236px; height: 20px;"></iframe>
@@ -60,80 +60,105 @@
     <!-- Features at a glance -->
     <div style="margin-top: 40px;">
       <div class="row" style="margin-bottom: 40px;">
-        <h1 class="lead" style="font-size: 64px; padding: 5px; color: #938D9E; text-align: center;">
-          IRC client as a service
-        </h1>
+        <h2 class="lead" style="font-size: 40px; padding: 5px; color: #938D9E; text-align: center;">
+          An Open Source communication and collaboration tool
+        </h2>
         <h1>
           <div class="row" style="color: #938D9E;">
-            <div class="col-md-3 col-sm-6 col-xs-6" style="text-align: center;">
+            <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;">
               <icon class="glyphicon glyphicon-cloud"></icon>
               <p style="font-size: 18px;">Central logging</p>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-6" style="text-align: center;">
+            <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;">
               <icon class="glyphicon glyphicon-time"></icon>
-              <p style="font-size: 18px;">24x7 online</p>
+              <p style="font-size: 18px;">24x7 IRC</p>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-6" style="text-align: center;">
+            <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;">
               <icon class="glyphicon glyphicon-user"></icon>
               <p style="font-size: 18px;">Unique identity</p>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-6" style="text-align: center;">
+            <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;">
               <icon class="glyphicon glyphicon-envelope"></icon>
               <p style="font-size: 18px;">Notifications</p>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;">
+              <icon class="fa fa-globe"></icon>
+              <p style="font-size: 18px;">Global access</p>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;">
+              <icon class="fa fa-tablet"></icon>
+              <icon class="fa fa-desktop"></icon>
+              <icon class="fa fa-mobile"></icon>
+              <p style="font-size: 18px;">Responsive</p>
             </div>
           </div>
         </h1>
       </div>
       <!-- Features at a glance end -->
 
-      <!-- Quickstart -->
-      <div class="row">
-        <div class="col-md-6" style="color: #938D9E;">
-          <h1 style="text-align: center; margin-top: 25%; margin-bottom: 25%;">
-            <icon class="glyphicon glyphicon-wrench" style="font-size: 64px; top: 12px;"></icon>
-              Easy setup
-          </h1>
-        </div>
-        <div class="col-md-6">
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              Quickstart
-            </div>
-            <div class="panel-body" style="overflow: auto;">
-              <ol>
-              <li>Install system dependencies: <code>node</code>, <code>npm</code> for your system. For example:
 
-                <ol>
-                  <li>For Fedora, you can do: <code>$ sudo yum install nodejs npm -y</code>
-                  </li>
-                  <li>For Mac OS X, you can install them via brew: <code>$ brew install node npm</code>
-                  </li>
-                  <li>For Debian/Ubuntu install only node.js and it will include npm as: 
-                     <code>$ sudo add-apt-repository ppa:chris-lea/node.js<br>
-                       $ sudo apt-get update<br>
-                       $ sudo apt-get install nodejs
-                     </code>
-                  </li>
-                  <li>Else, you can always compile from source.</li>
-                </ol>
-              </li>
-              <li>Get the source: <code>$ git clone --recursive https://github.com/waartaa/waartaa.git</code>
-              </li>
-              <li>Go to <strong>waartaa</strong>'s repository directory just cloned: <code>$ cd waartaa</code>
-              </li>
-              <li>Run setup script: <code>$ ./setup.sh</code>
-              </li>
-              <li>Customize <code>waartaa/server/settings-local.js</code> as needed.</li>
-              <li>Go to waartaa meteor project's directory: <code>$ cd waartaa</code>
-              </li>
-              <li>Run waartaa: <code>$ meteor</code>
-              </li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Quickstart end -->
-    </div>
-  </div>
+.. raw:: html
+
+    <h2>Quickstart</h2>
+    <hr/>
+
+
+.. container:: row no-container
+
+    .. container:: col-md-6 no-container
+
+        .. container:: panel panel-info no-container
+
+            .. container:: panel-heading no-container
+
+                Development
+
+            .. container:: panel-body no-container
+
+                .. code-block:: bash
+
+                    curl https://install.meteor.com/ | sh
+                    git clone https://github.com/waartaa/waartaa.git
+                    cd waartaa
+                    npm install collections
+                    cd app
+                    cp server/settings-local.js-dist server/settings-local.js
+                    meteor
+
+    .. container:: col-md-6 no-container
+
+        .. container:: panel panel-info no-container
+
+            .. container:: panel-heading no-container
+
+                Deployment
+
+            .. container:: panel-body no-container
+
+                1. Setup development environment as mentioned above.
+                2. Install ansible
+                    - Fedora/CentOS/RHEL: ``sudo yum install ansible``
+                    - Ubuntu/Debian: ``sudo apt-get install ansible``
+                    - Python pip: ``sudo pip install ansible``
+                3. Copy provisions/hosts.sample file to, let’s say, provisions/hosts and customize it as needed.
+                4. Configure SSH access and firewall in your servers as needed.
+                5. Setup servers, build and deploy waartaa: ``ansible -i provisions/hosts provisions/deploy.yml``
+
+
+.. container:: row no-container
+
+    .. raw:: html
+
+        <h2>Contribute</h2>
+        <hr/>
+
+
+    - Start using our `demo <https://try.waartaa.com>`_ instance or setup your own instance
+    - Report bugs, feature requests and feedback in general at
+      `https://github.com/waartaa/waartaa/issues
+      <https://github.com/waartaa/waartaa/issues>`_
+    - You can start working on issues marked as ``EasyFix`` `here
+      <https://github.com/waartaa/waartaa/issues>`_. If you need help,
+      just comment on the issue, and we'll get back.
+    - You can also ping us on IRC at ``#waartaa`` on ``Freenode``.
 

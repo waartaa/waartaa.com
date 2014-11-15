@@ -180,3 +180,10 @@ body {
   display: inline;
   padding: 0 2px;
 }
+
+.panel-body .code {
+  background-color: inherit;
+  border-width: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
