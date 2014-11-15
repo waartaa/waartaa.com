@@ -10,7 +10,7 @@ SITE_PROTOCOL = 'https'
 # Data about this site
 # (translatable)
 BLOG_AUTHOR = "Ratnadeep Debnath"
-BLOG_TITLE = "Waartaa"
+BLOG_TITLE = "Blog"
 # This is the main URL for your site. It will be used
 # in a prominent link
 SITE_URL = "{site_protocol}://www.waartaa.com/".format(
@@ -664,6 +664,7 @@ GLOBAL_CONTEXT = {
     #'blog_author': BLOG_AUTHOR,
     #'blog_title': BLOG_TITLE,
     'site_url': SITE_URL,
+    'site_title': 'Waartaa',
     #'blog_desc': BLOG_DESCRIPTION,
     'translations': TRANSLATIONS,
     #'license': LICENSE,
