@@ -1,5 +1,5 @@
 .. link: 
-.. description: 
+.. description: An open source communication and collaboration tool. Currenty, web IRC as a service
 .. tags: 
 .. date: 2014/02/10 01:55:26
 .. slug: index
